@@ -1,0 +1,20 @@
+{
+  "name": "galery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontEnd": "cd ./frontEnd && npm run dev",
+    "start:backEnd": "cd ./backEnd && npm run dev",
+    "install:backEnd": "cd ./backEnd && npm install",
+    "install:frontEnd": "cd ./frontEnd && npm install",
+    "install:all": "npm install && npm run install:backEnd && npm run install:frontEnd",
+    "start": "concurrently \"npm run start:backEnd\" \"npm run start:frontEnd\""
+  },
+  "author": "Haymin Alexey",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
